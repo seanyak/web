@@ -1,0 +1,81 @@
+
+
+
+// mixin is one of the great features that let developers use SASS instead of plain CSS, 
+// mixin allows you to have a Function inside your Stylesheet
+@mixin border-radius($radius){
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -ms-border-radius:$radius;
+    border-radius:$radius;
+  }
+
+  #awesome {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    @include border-radius(15px);
+  }
+
+
+
+@mixin border-stroke($val) {
+    @if $val == light {
+      border: 1px solid black;
+    }
+    @else if $val == medium {
+      border: 3px solid black;
+    }
+    @else if $val == heavy {
+      border: 6px solid black;
+    }
+    @else {
+      border: none;
+    }
+  }
+  
+  #box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    @include border-stroke(medium);
+  }  
+
+
+$x: 1;
+@while $x < 11 {
+  .text-#{$x} { 
+    font-size: 15px * $x;
+  }
+  $x: $x + 1;
+}
+
+@each $color in blue, black, red {
+    .#{$color}-bg {background-color: $color;}
+  }
+  
+  div {
+    height: 200px;
+    width: 200px;
+  }
+
+  // through loop
+  @for $x from 1 through 3 {
+    // some CSS
+  }
+  
+  // 1 2 3
+
+  // to loop
+  @for $x from 1 to 3 {
+    // some CSS
+  }
+  
+  // 1 2
+
+  @for $i from 1 through 10 {
+    .foo:nth-of-type(#{$i}) {
+      border-color: hsl($i * 36, 50%, 50%);
+    }
+  }
+

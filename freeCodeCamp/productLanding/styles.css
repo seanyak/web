@@ -1,0 +1,274 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: Lucida Console, sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 42px;
+  padding: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: linen;
+  
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 29vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 11px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 3;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 29vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#Mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 86px;
+  width: 100%;
+  padding: 50;
+}
+
+#Mission > h2 {
+  margin-bottom: 11px;
+  word-wrap: break-word;
+  justify-content: center;
+  text-align: center;
+}
+
+#Mission > p {
+  margin-bottom: 11px;
+  word-wrap: break-word;
+  justify-content: center;
+  text-align: center;
+}
+
+#Mission input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#Mission input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #FFC659;
+}
+
+#Mission input[type='submit']:hover {
+  background-color: #D4A12A;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #Mission {
+    margin-top: 120px;
+  }
+}
+
+#About {
+  margin-top: 69px;
+  width: 100%;
+  padding: 50;
+}
+
+@media (max-width: 650px) {
+  #About {
+    margin-top: 0;
+  }
+}
+
+#Introduction {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#Introduction > iframe {
+  max-width: 420px;
+  width: 100%;
+}
+
+#Subscribe {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 4);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.subscription > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 15px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.subscription > h2 {
+  margin-top: 15px;
+}
+
+.subscription > ol {
+  margin: 15px 0;
+}
+
+.subscription > ol > li {
+  padding: 11px 11px;
+}
+
+.subscription > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #FFC659;
+  font-weight: 400;
+}
+
+.subscription > button:hover {
+  background-color: #D4A12A;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #Subscribe {
+    flex-direction: column;
+  }
+  .subscription {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}

@@ -1,0 +1,17 @@
+#editor {
+  width: "400px";
+  height: "30vh";
+  margin-left: "auto";
+  margin-right: "auto";
+  padding:"10px";
+}
+
+#preview {
+  width: "400px";
+  height: "30vh";
+  background-color: "#DCDCDC";
+  margin-left: "auto";
+  margin-right: "auto";
+  padding:"10px";
+}
+

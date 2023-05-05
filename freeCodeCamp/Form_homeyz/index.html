@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homeyz</title>
+  </head>
+  <body>
+    <h1 id="title">HOMEYZ</h1>
+    <p id="description">Discover your homeschooling path and connect with like-minded homeschoolers.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name-first">First name:<input id="name" name="name-first" type="text" placeholder="Enter your first name" required /></label>
+        <label id="name-last-label" for="name-last">Last name:<input id="name-last" name="name-last" type="text" placeholder="Enter your last name" required /></label>
+        <label id="email-label" for="email">Email:<input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+      </fieldset>
+      <fieldset>
+        <label id="number-label" for="numStudents">How many children are you homeschooling?<input id="number" name="numStudents" type="number" min="0" max="666" placeholder="1" /></label>
+      </fieldset>
+      <fieldset>
+        <p>Which best describes your reason for homeschooling?</p>
+        <select id="dropdown" name="reason" required>
+          <option disable selected value>Select why you've chosen to homeschool</option>
+          <option value="options">Unhappy with local public school options</option>
+          <option value="curriculum">Unhappy with public curriculum</option>
+          <option value="box">My child does not fit a box</option>
+          <option value="religion">Religious reasons</option>
+          <option value="discipline">Disciplinary reasons</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>Complete this sentence:</p>
+          <p id="description">Letter grades are...</p>
+          <label for="very"><input type="radio" id="very" value="very" name="grades" class="inline" />very important.</label>
+          <label for="somewhat"><input type="radio" id="somewhat" value="somewhat" name="grades" class="inline" />somewhat important.</label>
+          <label for="not-very"><input type="radio" id="not-very" value="not-very" name="grades" class="inline" />not very important.</label>
+          <label for="not"><input type="radio" id="not" value="not" name="grades" class="inline" />not at all important.</label>
+      </fieldset>
+      <fieldset>
+        <p>Which method of homeschooling interests you? <span class="sub">(check all that apply)</span>
+          <label><input name="method-check" value="classical" type="checkbox" class="inline" />Classical</label>
+          <label><input name="method-check" value="charlotte" type="checkbox" class="inline" />Charlotte Mason</label>
+          <label><input name="method-check" value="montessori" type="checkbox" class="inline" />Montessori</label>
+          <label><input name="method-check" value="unschooling" type="checkbox" class="inline" />Unschooling</label>
+          <label><input name="method-check" value="school-at-home" type="checkbox" class="inline" />School-at-Home</label>
+          <label><input name="method-check" value="unit-studies" type="checkbox" class="inline" />Unit Studies</label>
+          <label><input name="method-check" value="eclectic" type="checkbox" class="inline" />Eclectic education methods</label>
+      </fieldset>
+      <fieldset>
+        <p>Tell us more about why you chose to homeschool:</p>
+        <textarea id="bio" name="bio" rows="6" cols="66"></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="submit"></button>
+    </form>
+  </body>
+</html
